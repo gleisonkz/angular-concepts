@@ -1,3 +1,13 @@
+import {
+    ContainerComponent
+} from 'src/app/concepts/decorators/component/view-provider/container/container.component';
+import {
+    HeaderComponent
+} from 'src/app/concepts/decorators/component/view-provider/container/header.component';
+import {
+    SliderComponent
+} from 'src/app/concepts/decorators/component/view-provider/container/slider.component';
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -6,13 +16,13 @@ import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ContainerComponent,
+    HeaderComponent,
+    SliderComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
