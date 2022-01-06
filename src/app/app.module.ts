@@ -7,6 +7,12 @@ import {
 import {
     SliderComponent
 } from 'src/app/concepts/decorators/component/view-provider/container/slider.component';
+import {
+    ViewProviderComponent
+} from 'src/app/concepts/decorators/component/view-provider/view-provider.component';
+import {
+    ReactiveFormsConceptModule
+} from 'src/app/concepts/forms/reactive-forms/reactive-forms.concept.module';
 
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -19,9 +25,10 @@ import { AppComponent } from './app.component';
     AppComponent,
     ContainerComponent,
     HeaderComponent,
+    ViewProviderComponent,
     SliderComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, ReactiveFormsConceptModule],
   providers: [],
   bootstrap: [AppComponent],
 })
